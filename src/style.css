@@ -1,0 +1,180 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    display: grid;
+    grid-template-columns:1fr 1.5fr 1fr;
+    grid-template-rows:.8fr 1fr 2fr;
+    background-color:#ffc600;
+}
+.header,section,main{
+    overflow: hidden;
+}
+header{
+    grid-column:1/4;
+    grid-row:1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:#ffc600;
+    font-weight:700;
+    padding:30px;
+}
+.logo{
+    margin-left:10px;
+    font-size: 2.4em;
+    font-weight: 800;
+    font-family: monospace;
+}
+.btn{
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 1.2em;;
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    color: #ffc600;
+}
+main{
+    grid-column:2/3;
+    grid-row:3/4;
+    background-color:#ffcc13;
+    border-radius:9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(5, 1, 1, 0.5);
+}
+section{
+    grid-column: 2/3;
+    grid-row:2/3;
+    margin-top:20px;
+    border-radius:5px;
+    padding: 8px;
+}
+.header{
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px auto;
+    
+
+}
+span{
+    font-size:34px;
+}
+
+.order{
+    background-color:black;
+    color:#ffc600;
+    border: none;
+    outline: none;
+    border-radius:9px;
+    padding:9px 30px;
+    font-size:24px;
+    margin-top:10px;
+
+}
+.order:hover{
+    background-color: #ffc600;
+    color:black;
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #ffc600;
+}
+.address{
+    padding:15px;
+    font-size: 24px;
+}
+
+#menu-header{
+    width:100%;
+    height:150px;
+}
+.menu-header{
+    font-size: 3em;
+}
+
+#menu-section{
+    width:100%;
+    height:200px;
+    position:absolute;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#menu{
+    position: absolute;
+    top: 320px;
+    width:50%;
+    left:28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin-top:2%;
+    box-shadow: inset 0 0 10px rgba(5, 1, 1, 0.5);
+
+}
+.menu-upper-div{
+    display: flex;
+    flex-direction: row;
+}
+.menu-des{
+    width:60%;
+}
+h3{
+    margin-bottom:2%;
+}
+.menu-img {
+    background: url("Pakistani-Chicken-Karahi-3.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat: cover;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    padding-left:3%;
+    margin-left: 4%; /* Define a height to maintain aspect ratio */
+}
+#menu-order{
+    font-size: 1em;
+    padding:8px 15px;
+    border: none;
+    border-radius:9px;
+    margin-top:5%;
+    border:1px solid black
+}
+
+#menu-order:hover{
+    background-color: black;
+    color:#ffc600;
+}
